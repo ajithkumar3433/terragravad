@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #F5F5F5;
+}
+.fixed-image{
+  height: 300px !important;
+  width: 300px !important;
+}
+
+// .background-ad{
+//   background-image: url("../images/landing-dog.jpg");
+// }
+.navbar-collapse{
+  flex-grow : 0 !important
+}
+.nav-item{
+  justify-content: flex-end;
+  display: flex;
+}
+.bg-orange-500{
+  background-color: rgb(255, 68, 4) !important;
+}
+.m-list{
+  display: contents;
+}
+.navbar-toggler-icon{
+  background-color: white !important;
+  --bs-navbar-toggler-border-color: white !important;
+}
+
+.sm-input{
+  z-index: 100;
+}
+
+.search{
+  border: 1px gray solid !important;
+}
+@media only screen and (max-width: 991px) {
+  .bg-item{
+    background-color: rgba(5, 5, 5, 0.644);
+  }
+  .header-input{
+    display: none;
+  }
+  .sm-input{
+    display: black;
+  }
+  .white-color{
+    color: white !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bg-item{
+    background-color: rgba(5, 5, 5, 0);
+  }
+  .header-input{
+    display: black;
+  }
+  .sm-input{
+    display: none;
+  }
+  .white-color{
+    color: black !important;
+  }
+}
+
+::-webkit-calendar-picker-indicator{
+  margin-right: 20px;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  font-size: 1rem;
+  top: 12px;
+  right: 20px;
+  position: absolute;
+}
